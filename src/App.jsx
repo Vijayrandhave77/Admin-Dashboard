@@ -29,10 +29,10 @@ import AdminTrash from "./views/users/admins/Trash";
 import Vendor from "./views/users/vendors/All";
 import VendorCreate from "./views/users/vendors/Create";
 import VendorTrash from "./views/users/vendors/Trash";
-import AdminLogsPage from "./views/logs/adminLogs/All";
-import AdminLogsDetails from "./views/logs/adminLogs/Details";
-import MailLogsPage from "./views/logs/mailLogs/All";
-import MailLogsDetails from "./views/logs/mailLogs/Details";
+import AdminLogsPage from "./views/logs/adlogs/All";
+import AdminLogsDetails from "./views/logs/adlogs/Details";
+import MailLogsPage from "./views/logs/mailogs/All";
+import MailLogsDetails from "./views/logs/mailogs/Details";
 function App() {
   return (
     <BrowserRouter>
