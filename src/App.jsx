@@ -29,8 +29,8 @@ import AdminTrash from "./views/users/admins/Trash";
 import Vendor from "./views/users/vendors/All";
 import VendorCreate from "./views/users/vendors/Create";
 import VendorTrash from "./views/users/vendors/Trash";
-import AdminLogsPage from "./views/dashboardlogs/adlogs/All";
-import AdminLogsDetails from "./views/dashboardlogs/adlogs/Details";
+import AdminLogsPage from "./views/dashboardlogs/adminlogs/All";
+import AdminLogsDetails from "./views/dashboardlogs/adminlogs/Details";
 import MailLogsPage from "./views/dashboardlogs/mailogs/All";
 import MailLogsDetails from "./views/dashboardlogs/mailogs/Details";
 function App() {
