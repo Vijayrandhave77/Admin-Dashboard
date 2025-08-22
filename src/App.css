@@ -818,3 +818,15 @@ body {
     grid-template-rows: repeat(2, auto);
     gap: 1rem;
 }
+
+/* footer */
+
+.footerPage,
+.paymentPage {
+    width: 100%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+}

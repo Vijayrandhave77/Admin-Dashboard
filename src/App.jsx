@@ -20,6 +20,9 @@ import BlogTrash from "./views/cms/blogs/Trash";
 import FaqsPage from "./views/cms/faqs/All";
 import FaqsCreate from "./views/cms/faqs/Create";
 import FaqsTrash from "./views/cms/faqs/Trash";
+import PaymentSetting from "./views/configuration/settings/PaymentSetting";
+import WebsiteSetting from "./views/configuration/settings/WebsiteSetting";
+import FooterSetting from "./views/configuration/settings/FooterSetting";
 import Customer from "./views/users/customers/All";
 import CustomerCreate from "./views/users/customers/Create";
 import CustomerTrash from "./views/users/customers/Trash";
@@ -63,6 +66,9 @@ function App() {
           <Route path="/cms/faq/create" element={<FaqsCreate />} />
           <Route path="/cms/faq/edit/:id" element={<FaqsCreate />} />
           <Route path="/cms/faq/trash" element={<FaqsTrash />} />
+          <Route path="/setting/payment-gatway" element={<PaymentSetting />} />
+          <Route path="/setting/website" element={<WebsiteSetting />} />
+          <Route path="/setting/footer-setting" element={<FooterSetting />} />
           <Route path="/customer/all" element={<Customer />} />
           <Route path="/customer/create" element={<CustomerCreate />} />
           <Route path="/customer/edit/:id" element={<CustomerCreate />} />

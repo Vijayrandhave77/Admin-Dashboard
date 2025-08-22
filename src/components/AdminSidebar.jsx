@@ -504,6 +504,11 @@ function AdminSidebar() {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="setting/website" className="customeRoute">
+                  <span>Website Setting</span>
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to="setting/store-setting" className="customeRoute">
                   <span>Store Settings</span>
                 </NavLink>

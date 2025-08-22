@@ -5,7 +5,6 @@ function SummernoteEditor({ initialValue, setInitialValue }) {
   return (
     <ReactQuill
       theme="snow"
-      style={{ height: "20rem" }}
       value={initialValue}
       onChange={(data) => {
         setInitialValue((pre) => ({ ...pre, content: data }));
