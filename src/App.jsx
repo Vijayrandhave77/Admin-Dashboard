@@ -22,6 +22,7 @@ import FaqsCreate from "./views/cms/faqs/Create";
 import FaqsTrash from "./views/cms/faqs/Trash";
 import PaymentSetting from "./views/configuration/settings/PaymentSetting";
 import WebsiteSetting from "./views/configuration/settings/WebsiteSetting";
+import StoreSetting from "./views/configuration/settings/StoreSetting";
 import FooterSetting from "./views/configuration/settings/FooterSetting";
 import Customer from "./views/users/customers/All";
 import CustomerCreate from "./views/users/customers/Create";
@@ -36,6 +37,8 @@ import AdminLogsPage from "./views/dashboardlogs/adminlogs/All";
 import AdminLogsDetails from "./views/dashboardlogs/adminlogs/Details";
 import MailLogsPage from "./views/dashboardlogs/mailogs/All";
 import MailLogsDetails from "./views/dashboardlogs/mailogs/Details";
+import NotFoundPage from "./pages/NotFoundPage";
+import ComingSoonPage from "./pages/ComingSoonPage";
 function App() {
   return (
     <BrowserRouter>
@@ -68,7 +71,9 @@ function App() {
           <Route path="/cms/faq/trash" element={<FaqsTrash />} />
           <Route path="/setting/payment-gatway" element={<PaymentSetting />} />
           <Route path="/setting/website" element={<WebsiteSetting />} />
+          <Route path="/setting/store-setting" element={<StoreSetting />} />
           <Route path="/setting/footer-setting" element={<FooterSetting />} />
+          <Route path="/master/units" element={<ComingSoonPage />} />
           <Route path="/customer/all" element={<Customer />} />
           <Route path="/customer/create" element={<CustomerCreate />} />
           <Route path="/customer/edit/:id" element={<CustomerCreate />} />
@@ -92,6 +97,7 @@ function App() {
             element={<MailLogsDetails />}
           />
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
