@@ -39,6 +39,12 @@ import MailLogsPage from "./views/dashboardlogs/mailogs/All";
 import MailLogsDetails from "./views/dashboardlogs/mailogs/Details";
 import NotFoundPage from "./pages/NotFoundPage";
 import ComingSoonPage from "./pages/ComingSoonPage";
+import Units from "./views/configuration/masters/Units";
+import Status from "./views/configuration/masters/Status";
+import Tages from "./views/configuration/masters/Tags";
+import Brands from "./views/configuration/masters/Brands";
+import Categories from "./views/configuration/masters/Categories";
+import Regions from "./views/configuration/masters/Regions";
 function App() {
   return (
     <BrowserRouter>
@@ -73,7 +79,12 @@ function App() {
           <Route path="/setting/website" element={<WebsiteSetting />} />
           <Route path="/setting/store-setting" element={<StoreSetting />} />
           <Route path="/setting/footer-setting" element={<FooterSetting />} />
-          <Route path="/master/units" element={<ComingSoonPage />} />
+          <Route path="/master/regions" element={<Regions />} />
+          <Route path="/master/categories" element={<Categories />} />
+          <Route path="/master/brands" element={<Brands />} />
+          <Route path="/master/tages" element={<Tages />} />
+          <Route path="/master/status" element={<Status />} />
+          <Route path="/master/units" element={<Units />} />
           <Route path="/customer/all" element={<Customer />} />
           <Route path="/customer/create" element={<CustomerCreate />} />
           <Route path="/customer/edit/:id" element={<CustomerCreate />} />
